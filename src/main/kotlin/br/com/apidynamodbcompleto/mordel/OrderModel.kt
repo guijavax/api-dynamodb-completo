@@ -19,5 +19,9 @@ data class OrderModel(
     @get:DynamoDbAttribute("OrderID")
     var orderId : String = "",
 
+    var orderValue: Double = 0.0,
 
+    var createdDate : Instant = Instant.now(),
+
+    var products : MutableList<ProductModel> = mutableListOf()
     )
