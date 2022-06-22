@@ -11,7 +11,10 @@ import software.amazon.awssdk.enhanced.dynamodb.model.PageIterable
 import software.amazon.awssdk.enhanced.dynamodb.model.QueryConditional
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue
 
-
+/**
+ * @author: Guilherme Alves
+ * Classe que faz as operacoes do dynamo
+ */
 @Repository
 class OrderRepository(val dynamoDbEnhancedClient: DynamoDbEnhancedClient) {
 
